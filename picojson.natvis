@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="picojson::value">
+    <DisplayString Condition="type_ == 0">empty</DisplayString>
+    <DisplayString Condition="type_ == 1">{u_.boolean_}</DisplayString>
+    <DisplayString Condition="type_ == 2">{u_.number_}</DisplayString>
+    <DisplayString Condition="type_ == 3">{u_.string_}</DisplayString>
+    <DisplayString Condition="type_ == 4">{u_.array_}</DisplayString>
+    <DisplayString Condition="type_ == 5">{u_.object_}</DisplayString>
+    <DisplayString Condition="type_ == 6" Optional="true">{u_.int64_}</DisplayString>
+    <StringView Condition="type_ == 3">u_.string_</StringView>
+    <Expand>
+      <ExpandedItem Condition="type_ == 3">u_.string_</ExpandedItem>
+      <ExpandedItem Condition="type_ == 4">u_.array_</ExpandedItem>
+      <ExpandedItem Condition="type_ == 5">u_.object_</ExpandedItem>
+    </Expand>
+  </Type>
+</AutoVisualizer>
