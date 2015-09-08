@@ -11,4 +11,7 @@ Copy a .natvis file into one of the locations below:
 ## Supporting libraries
 
 * picojson: https://github.com/kazuho/picojson
+  * Which file should you use?
+    * picojson_2012_2013_undefined_PICOJSON_USE_INT64.natvis : Visual Studio 2012/2013 and undefined PICOJSON_USE_INT64.
+    * picojson.natvis : other case.
 * ...
